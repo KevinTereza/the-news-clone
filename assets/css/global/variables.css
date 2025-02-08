@@ -1,0 +1,12 @@
+:root {
+    --primary-font: "Poppins", serif;
+    --secondary-font: "Arial", serif;
+    --tertiary-font: "Montserrat", serif;
+    --terms-font: sans-serif;
+    --main-background: #FFFFFF;
+    --primary-color: #FECF00;
+    --secondary-color: #000000;
+    --newsletter-background: #F9FAFB;
+    --placeholder-color: #6B7280;
+    --read-first-color: #C0C0C0;
+}

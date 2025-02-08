@@ -1,0 +1,93 @@
+/* 
+   STYLES FOR LARGER SCREENS
+   This file contains media queries and styles for screens larger than the base mobile styles. 
+   These styles adapt the layout for tablets, desktops, and larger devices.
+*/
+
+/* STYLES FOR TABLETS */
+@media (min-width: 48rem) {
+    body {
+        padding: 0 2rem;
+    }
+
+    body::after {
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    }
+
+    .main__wrapper {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        text-align: left;
+        justify-content: left;
+        align-items: normal;
+        max-width: 46rem;
+    }
+
+    .content__logo {
+        margin: 0 0 1.25rem 0;
+    }
+
+    .content__title {
+        font-size: clamp(2em, 2.25em, 2.5em);
+    }
+
+    .content__form {
+        margin: 0;
+        flex-direction: row;
+    }
+    
+    .content__input-wrapper {
+        padding: 0;
+        flex: 1;
+    }
+
+    .content__icon {
+        width: 1.5em;
+    }
+
+    .content__readers {
+        margin: 1rem 0 2rem 0;
+        font-size: 1.125em;
+    }
+
+    .content__read-first {
+        margin: 0;
+    }
+
+    .main-image {
+        display: block;
+        width: 100%;
+        max-width: 16rem;
+        height: auto;
+    }
+
+    .main__image {
+        width: 100%;
+    }
+
+    .terms {
+        position: absolute;
+        margin: 0;
+        left: 1vw;
+        bottom: 1vw;
+        transform: none;
+        flex-direction: row;
+    }
+}
+
+/* STYLES FOR DESKTOPS */
+@media (min-width: 64rem) {
+    body {
+        padding: 0;
+    }
+    .main__wrapper {
+        align-items: start;
+    }
+    .content {
+        margin-top: 2rem;
+    }
+}

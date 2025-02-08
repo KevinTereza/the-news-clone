@@ -1,0 +1,172 @@
+/* 
+   STYLES FOR MOBILE 
+   This file contains the base styles, following the mobile-first approach. 
+   Media queries for larger screens are in the "responsive.css" file.
+*/
+
+body {
+    font-family: var(--primary-font);
+    position: relative;
+    background-color: var(--main-background);
+    padding: 0 1rem;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffcc00;
+  clip-path: polygon(400% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
+
+.main__wrapper {
+    min-height: 100vh;
+    align-items: center;
+}
+
+.main__wrapper, .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.content__logo {
+    width: 6em; 
+    border-radius: 0.625em;
+    box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto 1.25rem;
+}
+
+.content__brand {
+    font-size: clamp(1em, 1vw + 0.91em, 1.5em);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.content__title {
+    font-size: clamp(1em, 1vw + 1.67em, 1.975em);
+    font-family: var(--secondary-font);
+}
+
+.content__title--extra {
+    margin-bottom: 0.625rem;
+}
+
+.content__title--extra::after {
+    content: '☕';
+    margin-left: 0.5ch;
+}
+
+.content__text--extra {
+    margin-bottom: 1.125rem;
+}
+
+.content__text--extra::after {
+    content: '(sem açúcar).';
+    margin-left: 0.5ch;
+}
+
+.content__form {
+    padding: 0.25em;
+    display: flex;
+    flex-direction: column;
+    border: 0.125em solid var(--primary-color);
+    background-color: var(--newsletter-background);
+    border-radius: 0.5em;
+    max-width: 32rem;
+    margin: 0 auto 0.625rem;
+    width: 100%;
+}
+
+.content__input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.content__icon {
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--primary-color);
+    padding-left: 0.5em;
+    box-sizing: content-box;
+}   
+
+.content__input {
+    font-size: clamp(0.625em, 1vw + 0.9em, 1.125em);
+    font-family: inherit;
+    background-color: inherit;
+    border: none;
+    padding: 0 0.75em;
+    width: 100%;
+}
+
+.content__input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.content__input:focus {
+    outline: none;
+}
+
+.content__submit {
+    background-color: var(--primary-color);
+    padding: 0.75em 1.25em;
+    border: none;
+    font-size: clamp(0.625em, 1vw + 1em, 1.125em);
+    font-weight: 600;
+    font-family: var(--tertiary-font);
+    border-radius: 0.438em;
+    cursor: pointer;    
+}
+
+.content__readers {
+    display: block;
+    color: var(--primary-color);
+}
+
+.content__read-first {
+    color: var(--read-first-color);
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0 auto 0.625rem auto;
+    width: fit-content;
+    opacity: 0.75;
+}
+
+.content__read-first:hover {
+    opacity: 1;
+}
+
+.content__icon-read {
+    width: clamp(0.5em, 1em, 2em);
+    vertical-align: middle;
+}
+
+.main-image {
+    display: none;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    bottom: 2vw;
+    gap: 0.625rem;
+}
+
+.terms__link {
+    color: var(--secondary-color);
+    font-size: clamp(0.313em, 1vw + 0.35em, 0.688em);
+    opacity: 0.3;
+    font-family: var(--terms-font);
+}
