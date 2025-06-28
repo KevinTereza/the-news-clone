@@ -85,7 +85,7 @@
         padding: 0;
     }
     .main__wrapper {
-        align-items: start;
+        align-items: center;
     }
     .content {
         margin-top: 2rem;
